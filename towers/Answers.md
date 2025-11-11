@@ -78,7 +78,7 @@ _Every move must pass through the middle peg. How does this alter the recursion?
 ### 3. Analysis
 _Why does this variation grow faster than the standard version? How do additional move constraints affect complexity?_
 
-> ✎ the complexity changes because the amount of recursive calls is going up. it changes from being O(2^n) O(3^n).
+> ✎ the complexity changes because the amount of recursive calls is going up. it changes from being O(2^n) to O(3^n).
 
 ---
 
