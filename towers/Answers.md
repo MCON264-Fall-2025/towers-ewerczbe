@@ -55,7 +55,7 @@ _Complete the table and verify that count = 2ⁿ − 1._
 ### 3. Reflection
 _What changes when you replace printed moves with a counter? What are the pros and cons?_
 
-> ✎ it simplifies the algorithm and has better results. pros: it has cleaner output and its easier to verify the correctness of the result. cons cant see ther actual sequence of moves and it makes it harder to debug.
+> ✎ it simplifies the algorithm and has better results. pros: it has cleaner output and its easier to verify the correctness of the result. cons cant see the actual sequence of moves and it makes it harder to debug.
 
 ---
 
