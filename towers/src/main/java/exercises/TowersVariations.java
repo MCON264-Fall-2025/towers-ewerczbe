@@ -68,8 +68,7 @@ public class TowersVariations {
         count += 2;
 
         // Step 3: Move n-1 disks from 'mid' to 'to' using 'from' as helper
-        solveVariation(n - 1, to, mid, from);
-        solveVariation(n - 1, from, mid, to);
+        solveVariation(n - 1, mid, from, to);
     }
 
 
