@@ -95,7 +95,7 @@ _Why does this variation grow faster than the standard version? How do additiona
 ### 2. Stack Depth and Memory
 _Estimate the maximum recursion depth before StackOverflowError and discuss how stack size (–Xss flag) affects this._
 
-> ✎The maximum recursion depth is equal to n, since each recursive call reduces n
+> ✎ The maximum recursion depth is equal to n, since each recursive call reduces n
 
 
 ---
