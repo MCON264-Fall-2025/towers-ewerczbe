@@ -57,15 +57,20 @@ public class TowersVariations {
      * @param to   destination peg label
      */
     public static void solveVariation(int n, int from, int mid, int to) {
-        // TODO 1: Base case — if n == 0 → return.
+        if (n == 0) return; // Base case: no disks to move
 
-        // TODO 2: Recursive case —
-        //  a) Move n-1 disks from 'from' to 'mid' (using 'to' as helper)
-        //  b) Move disk n from 'from' to 'to' — BUT must go through 'mid':
-        //        System.out.printf("Move disk %d: %d → %d → %d%n", n, from, mid, to);
-        //     or if counting only: count += 2; // because two moves required
-        //  c) Move n-1 disks from 'mid' to 'to' (using 'from' as helper)
+        // Step 1: Move n-1 disks from 'from' to 'mid' using 'to' as helper
+        solveVariation(n - 1, from, mid, to);
+
+        // Step 2: Move disk n from 'from' to 'to' via 'mid'
+        System.out.printf("Move disk %d: %d → %d%n", n, from, mid);
+        System.out.printf("Move disk %d: %d → %d%n", n, mid, to);
+        count += 2;
+
+        // Step 3: Move n-1 disks from 'mid' to 'to' using 'from' as helper
+        solveVariation(n - 1, mid, from, to);
     }
+
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
